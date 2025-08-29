@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dade Bright Auto - Premium Limo Service Atlanta</title>
+    <meta name="description" content="Dade Bright Auto - Premium luxury transportation in Atlanta, GA. Mercedes Sprinter, Cadillac Escalade, Chevrolet Suburban. Airport transfers, corporate transportation, weddings, special events.">
+    <meta name="keywords" content="Atlanta limo service, luxury transportation, Mercedes Sprinter, Cadillac Escalade, Chevrolet Suburban, airport transfer, corporate transportation, wedding transportation">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://page.gensparksite.com/v1/base64_upload/961d87696c20f4b89a67bd45bb7768ef">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://page.gensparksite.com/v1/base64_upload/961d87696c20f4b89a67bd45bb7768ef">
+    <link rel="apple-touch-icon" href="https://page.gensparksite.com/v1/base64_upload/961d87696c20f4b89a67bd45bb7768ef">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            color: #gold;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://news.cadillac.com/dld/content/dam/Media/images/US/Vehicles/Cadillac/Escalade/2025/Product/2025-cadillac-escalade-014.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #f0c419;
+        }
+
+        .hero-description {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #f0c419 0%, #d4ac0d 100%);
+            color: #1a1a1a;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(240, 196, 25, 0.3);
+        }
+
+        .btn-secondary {
+            border: 2px solid #f0c419;
+            color: #f0c419;
+            background: transparent;
+        }
+
+        .btn-secondary:hover {
+            background: #f0c419;
+            color: #1a1a1a;
+        }
+
+        /* Fleet Section */
+        .fleet {
+            padding: 5rem 0;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #1a1a1a;
+        }
+
+        .vehicles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .vehicle-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .vehicle-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .vehicle-image {
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .vehicle-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .vehicle-info {
+            padding: 2rem;
+        }
+
+        .vehicle-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+
+        .vehicle-details {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .vehicle-capacity,
+        .vehicle-feature {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #f0f0f0;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .vehicle-description {
+            margin-bottom: 1.5rem;
+            color: #666;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: #1a1a1a;
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-item i {
+            color: #f0c419;
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: #0a0a0a;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #f0c419;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <img src="https://page.gensparksite.com/v1/base64_upload/961d87696c20f4b89a67bd45bb7768ef" alt="D'brightauto" class="logo">
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#fleet">Our Fleet</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Dade Bright Auto</h1>
+            <h2 class="hero-subtitle">Premium Luxury Transportation in Atlanta</h2>
+            <p class="hero-description">Experience the pinnacle of luxury travel with our premium fleet of Mercedes Sprinter, Cadillac Escalade, and Chevrolet Suburban vehicles.</p>
+            <div class="hero-buttons">
+                <a href="https://app.squareup.com/appointments/book/2wnu8my0lt1nsj/LTNJZZ4H5268A/start" target="_blank" class="btn btn-primary">Book Now</a>
+                <a href="#fleet" class="btn btn-secondary">View Fleet</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section class="fleet" id="fleet">
+        <div class="container">
+            <h2 class="section-title">Our Premium Fleet</h2>
+            <div class="vehicles-grid">
+                <!-- Mercedes Sprinter -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <img src="https://www.mbvans.com/content/dam/mb-vans/us/myco/Sprinter/byo-options/U1A_MB_FL_O_14+1_Seating.jpg" alt="2025 Mercedes-Benz Sprinter Van" loading="lazy">
+                    </div>
+                    <div class="vehicle-info">
+                        <h3 class="vehicle-name">2025 Mercedes-Benz Sprinter Van</h3>
+                        <div class="vehicle-details">
+                            <span class="vehicle-capacity"><i class="fas fa-users"></i> Up to 15 Passengers</span>
+                            <span class="vehicle-feature"><i class="fas fa-star"></i> Premium Group Transportation</span>
+                        </div>
+                        <p class="vehicle-description">Spacious luxury van perfect for large groups, airport transfers, and corporate events. Features premium seating, climate control, and entertainment systems.</p>
+                        <a href="https://app.squareup.com/appointments/book/2wnu8my0lt1nsj/LTNJZZ4H5268A/start" target="_blank" class="btn btn-primary">Book This Vehicle</a>
+                    </div>
+                </div>
+
+                <!-- Cadillac Escalade -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <img src="https://news.cadillac.com/dld/content/dam/Media/images/US/Vehicles/Cadillac/Escalade/2025/Product/2025-cadillac-escalade-014.jpg" alt="2025 Cadillac Escalade" loading="lazy">
+                    </div>
+                    <div class="vehicle-info">
+                        <h3 class="vehicle-name">2025 Cadillac Escalade</h3>
+                        <div class="vehicle-details">
+                            <span class="vehicle-capacity"><i class="fas fa-users"></i> Up to 8 Passengers</span>
+                            <span class="vehicle-feature"><i class="fas fa-crown"></i> Ultimate Luxury</span>
+                        </div>
+                        <p class="vehicle-description">The epitome of luxury SUV comfort with premium leather seating, advanced technology, and commanding presence for executive transportation.</p>
+                        <a href="https://app.squareup.com/appointments/book/2wnu8my0lt1nsj/LTNJZZ4H5268A/start" target="_blank" class="btn btn-primary">Book This Vehicle</a>
+                    </div>
+                </div>
+
+                <!-- Chevrolet Suburban -->
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <img src="https://di-uploads-pod24.dealerinspire.com/twinfallschevrolet/uploads/2025/02/2025-chevrolet-suburban-black.webp" alt="2025 Chevrolet Suburban" loading="lazy">
+                    </div>
+                    <div class="vehicle-info">
+                        <h3 class="vehicle-name">2025 Chevrolet Suburban</h3>
+                        <div class="vehicle-details">
+                            <span class="vehicle-capacity"><i class="fas fa-users"></i> Up to 8 Passengers</span>
+                            <span class="vehicle-feature"><i class="fas fa-shield-alt"></i> Reliable Luxury</span>
+                        </div>
+                        <p class="vehicle-description">Spacious and reliable luxury SUV combining comfort with capability. Perfect for family events, airport transfers, and extended journeys.</p>
+                        <a href="https://app.squareup.com/appointments/book/2wnu8my0lt1nsj/LTNJZZ4H5268A/start" target="_blank" class="btn btn-primary">Book This Vehicle</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>(404) 488-6164</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>bolaji@dbrightauto.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Atlanta, GA</span>
+                </div>
+            </div>
+            <a href="https://app.squareup.com/appointments/book/2wnu8my0lt1nsj/LTNJZZ4H5268A/start" target="_blank" class="btn btn-primary">Book Your Ride Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://facebook.com/DadeBrightAuto" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/dbrightauto" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/dbrightauto" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 Dade Bright Auto. All rights reserved. Premium luxury transportation in Atlanta, GA.</p>
+        </div>
+    </footer>
+</body>
+</html>
